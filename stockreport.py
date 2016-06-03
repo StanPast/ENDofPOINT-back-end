@@ -19,7 +19,7 @@ def post_stock_price(symbol, apikey, devicename):
         device = [d for d in client.devices(q=devicename) if d.name == devicename][0]
     except IndexError:
         device = client.create_device(name=devicename,
-                                      description="Stockreport Example Device",
+                                      description="Stockreport Device",
                                       visibility="private")
 
     # Get the stream if it exists, if not create the stream.

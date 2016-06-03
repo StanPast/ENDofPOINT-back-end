@@ -6,8 +6,8 @@ import time
 from stockreport import post_stock_price
 
 
-DEVICE_NAME1 = os.environ.get('DEVICE_NAME', 'stockreport-heroku1')
-DEVICE_NAME2 = os.environ.get('DEVICE_NAME', 'stockreport-heroku2')
+DEVICE_NAME1 = os.environ.get('DEVICE_NAME', 'stockreport1')
+DEVICE_NAME2 = os.environ.get('DEVICE_NAME', 'stockreport2')
 
 APIKEY = os.environ['M2X_API_KEY']
 

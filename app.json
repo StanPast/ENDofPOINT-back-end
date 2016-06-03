@@ -1,7 +1,7 @@
 {
-  "name": "M2X Python Demo App",
-  "description": "AT&amp;T M2X Heroku Demo Application",
-  "repository": "https://github.com/attm2x/m2x-demo-heroku-python",
+  "name": "M2X Python App",
+  "description": "ENDofPOINT",
+  "repository": "https://github.com/StanPast/m2x-heroku-python",
   "keywords": ["python", "m2x"],
   "addons": ["m2x"]
 }
