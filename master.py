@@ -6,7 +6,8 @@ import time
 from stockreport import post_stock_price
 
 
-DEVICE_NAME = os.environ.get('DEVICE_NAME', 'stockreport-heroku')
+DEVICE_NAME1 = os.environ.get('DEVICE_NAME', 'stockreport-heroku1')
+DEVICE_NAME2 = os.environ.get('DEVICE_NAME', 'stockreport-heroku2')
 
 APIKEY = os.environ['M2X_API_KEY']
 
@@ -17,6 +18,7 @@ sys.stderr = os.fdopen(sys.stderr.fileno(), 'w', 0)
 while True:
     print "Posting stock prices."
     # Post stock price of AT&T
-    post_stock_price("T", APIKEY, DEVICE_NAME)
+    post_stock_price("T", APIKEY, DEVICE_NAME1)
+    post_stock_price("A", APIKEY, DEVICE_NAME2)
     print "Stock prices posted."
     time.sleep(60)
