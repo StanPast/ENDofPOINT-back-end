@@ -20,6 +20,6 @@ while True:
     # Post stock price of AT&T
     post_stock_price("T", APIKEY, DEVICE_NAME1)
     post_stock_price("A", APIKEY, DEVICE_NAME1)
-    post_stock_info("GOOG", APIKEY, DEVICE_NAME1)
+    post_stock_price("GOOG", APIKEY, DEVICE_NAME1)
     print "Stock prices posted." + " DEVICE_NAME1: " + DEVICE_NAME1 + " DEVICE_NAME2: " + DEVICE_NAME2
     time.sleep(60)
